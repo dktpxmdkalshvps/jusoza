@@ -9,7 +9,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import StreamingResponse
 from openpyxl import Workbook, load_workbook
 
-from .juso import JusoClient
+from backend.app.juso import JusoClient
 
 app = FastAPI(title="Jusoza", version="0.2.0")
 origins = [x.strip() for x in os.getenv("CORS_ORIGINS", "").split(",") if x.strip()]
