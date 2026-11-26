@@ -1,7 +1,7 @@
 import io
 from openpyxl import Workbook
 from fastapi import HTTPException
-from app.main import read_rows, pick_candidate
+from backend.app.main import read_rows, pick_candidate
 
 def test_xlsx_preserves_headers_and_rows():
     wb=Workbook(); ws=wb.active
